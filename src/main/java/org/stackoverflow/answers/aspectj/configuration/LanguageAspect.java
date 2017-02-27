@@ -23,7 +23,7 @@ public class LanguageAspect
     }
 
     @AfterReturning( pointcut = "execution(* *(..))" , returning = "languages" )
-    public void sayHello( Collection<LanguageI> languages )
+    public void sayHelloEverybody( Collection<LanguageI> languages )
     {
         System.out.println( "List of languages" );
         for( LanguageI language : languages )
